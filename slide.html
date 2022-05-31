@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/slide.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/icon/themify-icons/themify-icons.css" />
+  </head>
+  <!-- Có thể đặt class css theo kiểu thế này cho nó liên quan tí: -->
+  <!-- blog-list -->
+  <!-- blog-item -->
+  <!-- blog-image -->
+  <!-- .... -->
+  <body>
+    <div class="main">
+      <div class="slide-container">
+        <div class="slide-title">
+          <h2>Đào tạo</h2>
+        </div>
+        <!-- Nguyên cái nội dung này cách top ví dụ là 20px thì em nên xét margin top cho class-content, tránh xét margin cho class slide-items -->
+        <!-- Class slide-content không nên xét justify-content: space-between; mà dùng  flex-flow: wrap; để có thêm 1 bài viết nữa thì nó sẽ tự đẩy xuống dòng -->
+        <div class="slide-content">
+          <!-- Nên dùng padding cho slide-items chứ không dùng margin để cho các bài viết cách đều nhau -->
+          <div class="slide-items">
+            <!-- Luôn luôn xét display: block cho thẻ a hoặc các loại display khác tùy theo trường hợp để nó lấy full width, height -->
+            <!-- Nên sét hover vào thẻ a luôn chứ khong phải img -->
+            <!-- Lúc hover vào chỉ cần set opacity thôi là được rồi, hoặc bất kì hiệu ứng nào miễn đẹp là được , nhưng tránh làm cho nó bị giựt giựt, tạo cảm giác khó chịu cho người sử dụng -->
+            <a href="#"
+              ><img src="assets/images/Mask Group 4.png" alt="Hinh anh"
+            /></a>
+            <div class="title">
+              <!-- Chỗ này dùng tag a, rồi code style cho tag a thôi là được rồi, dùng thêm tag h3 là dư thừa -->
+              <!-- Hoặc dùng thẻ a cho cả title và icon arrow luôn -->
+              <h3>
+                <a href="#"
+                  >VietSeeds Chào đón Tân sinh viên Thế hệ F10 ở cả ba miền</a
+                >
+              </h3>
+              <a href="#" class="ti-arrow-right arrow"></a>
+            </div>
+            <div class="date">
+              <p>September 30, 2020</p>
+              <!-- Cái này không phải là dùng 1 tag a nó đơn thuần chỉ là hiện tag của bài viết đó thuộc loại nào thôi, có thể dùng div/p,... -->
+              <a href="#">Đào tạo</a>
+            </div>
+          </div>
+          <div class="slide-items">
+            <a href="#"
+              ><img src="assets/images/Mask Group 5.png" alt="Hinh anh"
+            /></a>
+            <div class="title">
+              <h3>
+                <a href="#"
+                  >VietSeeds Chào đón Tân sinh viên Thế hệ F10 ở cả ba miền</a
+                >
+              </h3>
+              <a href="#" class="ti-arrow-right arrow"></a>
+            </div>
+            <div class="date">
+              <p>September 30, 2020</p>
+              <a href="#">Đào tạo</a>
+            </div>
+          </div>
+          <div class="slide-items">
+            <a href="#"
+              ><img src="assets/images/Mask Group 3.png" alt="Hinh anh"
+            /></a>
+            <div class="title">
+              <h3>
+                <a href="#"
+                  >VietSeeds Chào đón Tân sinh viên Thế hệ F10 ở cả ba miền</a
+                >
+              </h3>
+              <a href="#" class="ti-arrow-right arrow"></a>
+            </div>
+            <div class="date">
+              <p>September 30, 2020</p>
+              <a href="#">Đào tạo</a>
+            </div>
+          </div>
+          <div class="slide-items">
+            <a href="#"
+              ><img src="assets/images/Mask Group 3.png" alt="Hinh anh"
+            /></a>
+            <div class="title">
+              <h3>
+                <a href="#"
+                  >VietSeeds Chào đón Tân sinh viên Thế hệ F10 ở cả ba miền</a
+                >
+              </h3>
+              <a href="#" class="ti-arrow-right arrow"></a>
+            </div>
+            <div class="date">
+              <p>September 30, 2020</p>
+              <a href="#">Đào tạo</a>
+            </div>
+          </div>
+        </div>
+        <div class="more"></div>
+      </div>
+    </div>
+  </body>
+</html>
