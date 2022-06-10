@@ -17,7 +17,7 @@ window.addEventListener("DOMContentLoaded", function () {
         subMenu.style.height = 0;
         setTimeOut = setTimeout(() => {
           subMenu.classList.remove("show");
-        }, 500);
+        }, 502);
       } else {
         subMenu.classList.add("show");
         setTimeOut = setTimeout(function () {
