@@ -58,17 +58,24 @@ ul > li >a {
 .hide {
     display: none;
 }
+.show {
+    display: block !important;
+}
 .dropdown-content {
     border: 1px solid #ccc ;
     border-radius: 8px;
-    top: 45px;
+    top: 52px;
     left: 10px;
     position: absolute;
     background-color:rgb(221, 218, 218);
-    max-height: 200px;
+    /* max-height: 200px; */
     overflow: hidden;
-    animation-name: drop;
-    animation-duration: 0.3s;
+    /* animation-name: drop;
+    animation-duration: 0.3s; */
+    display: none;
+
+    height: 0;
+    transition: 0.5s;
 }
 @keyframes drop {
     0%   {max-height: 0px;}
