@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.form-1 {
+    padding: 20px;
+    margin: 10% auto;
+    width: 60%;
+}
+.form-1 h3 {
+    font-size: 32px;
+    line-height: 32px;
+    padding-bottom: 12px;
+}
+.form-1 > p {
+    font-size: 18px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #CCC;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+.form-label {
+    font-size: 18px;
+    margin-top: 12px;
+    margin-bottom: 10px;
+}
+.form-group > .form-input {
+    padding-left: 10px;
+    border: none;   
+    background-color: rgb(232, 229, 229);
+    height: 34px;
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+.form-message {
+    line-height: 20px;
+    font-size: 18px;
+    height: 20px;
+}
+.form-submit {
+    margin: 12px 0;
+}
+.checkbox {
+    display: flex;
+}
+.checkbox > input {
+    height: 18px;
+    width: 18px;
+    margin-right: 6px;
+}
+.checkbox > label {
+    font-size: 16px;
+    height: 18px;
+}
+.form-submit > p {
+    font-size: 16px;
+    line-height: 22px;
+    margin: 12px 0;
+}
+.submit-btn {
+    width: 100%;
+    display: flex;
+}
+.submit-btn > button {
+    width: 50%;
+    border: none;
+    height: 40px;
+    color: #FFF;
+    background-color: green;
+    opacity: 0.5;
+
+}
+.submit-btn > button:hover {
+    opacity: 0.7;
+    transition: 0.25s;
+}
+.submit-btn > button:nth-child(1) {
+    background-color: red;
+    color: #fff;
+}
+.invalid > .form-input{
+    border: 1px solid red;
+
+}
+.invalid > .form-message {
+    color: red;
+}
