@@ -42,17 +42,17 @@
             
         </form>
     </div>
-    <script src="/assets/JS/form.js"></script>
+    <script src="/assets/js/form.js"></script>
     <script>
         Validator({
             form: "#form-1",
             errorSelector: ('.form-message'),
             rules: [
-                Validator.isRequired('#email','Please enter your Email'),
+                Validator.isRequired('#email','This field is required'),
                 Validator.isEmail('#email','Your Email not correct'),
-                Validator.isRequired('#password', "Please enter your Password"),
+                Validator.isRequired('#password', "This field is required"),
                 Validator.isPassword('#password'),
-                Validator.isRequired('#confirm-password'),
+                Validator.isRequired('#confirm-password','This field is required'),
                 Validator.isConfirmed('#confirm-password', function() {
                     return document.querySelector('#form-1 #password').value
                 },"Confirm password not correct")
