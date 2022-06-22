@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.straight-line {
+    border-bottom: 1px solid #CCC;
+}
+.form-1 {
+    padding: 20px;
+    margin: 10% auto;
+    width: 60%;
+}
+.form-1 h3 {
+    font-size: 32px;
+    line-height: 32px;
+    padding-bottom: 12px;
+}
+.form-1 > p {
+    font-size:18px;
+    line-height: 30px;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+.form-label {
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    margin-top: 12px;
+}
+.form-group > .form-input {
+    padding: 10px;
+    border: none;   
+    background-color: rgb(232, 229, 229);
+    height: 34px;
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+.form-message {
+    line-height: 20px;
+    font-size: 18px;
+    height: 20px;
+    display: none;
+}
+
+.checkbox {
+    margin-top: 10px;
+    display: flex;
+}
+.checkbox > input {
+    height: 24px;
+    width: 24px;
+    margin-right: 6px;
+}
+.checkbox > label {
+    font-size: 16px;
+    height: 18px;
+}
+.submit-btn {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+}
+.submit-btn > button {
+    cursor: pointer;
+    width: 50%;
+    border: none;
+    height: 40px;
+    color: #FFF;
+    background-color: green;
+    opacity: 0.5;
+
+}
+.submit-btn > button:hover {
+    opacity: 0.7;
+    transition: 0.25s;
+}
+.submit-btn > button:nth-child(1) {
+    background-color: red;
+    color: #fff;
+}
+.invalid > .form-input{
+    border: 1px solid red;
+
+}
+.invalid > .form-message {
+    color: red;
+    display: block;
+}
