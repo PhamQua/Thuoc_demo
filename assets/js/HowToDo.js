@@ -30,6 +30,8 @@ var modal = document.querySelector('.modal');
 var sideNav = document.querySelector('.sidenav')
 var main = document.querySelector('.main-container')
 var slideModal = document.querySelector('.slide-modal')
+var iconBar = document.querySelector('.icon-bar')
+
 
 window.onclick = function(event) {
 if (event.target == modal) {
@@ -52,6 +54,16 @@ function closeNav() {
     sideNav.style.width = "0";
     slideModal.style.display = "block"
     }
-
+    var lastScrollTop = 0
+    window.addEventListener('scroll', function() {
+        var scrollTop = window.pageYOffset 
+        if (scrollTop > lastScrollTop ) {
+            iconBar.style.top = '-50px'
+        } else {
+            iconBar.style.top = '0'
+        }
+        lastScrollTop
+        
+    })
 
   
