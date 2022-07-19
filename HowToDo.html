@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HowToDo</title>
-    <link rel="stylesheet" href="/assets/css/HowToDo-SlideShow.css">
-    <link rel="stylesheet" href="/assets/css/HowToDo-Modal.css">
+    <link rel="stylesheet" href="/assets/css/HowToDo.css">
 </head>
 <body>
    <div class="main-container">
@@ -19,7 +18,7 @@
       <span onclick="closeNav()"class="close_sidenav-btn">&#10006</span>
        <a href="#">About</a>
        <a href="#">Services</a>
-       <a href="#">Clients</a>-
+       <a href="#">Clients</a>
        <a href="#">Contact</a>
      </div>
     </div>
@@ -90,20 +89,13 @@
 
 
 <!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-  <span class="dot" onclick="currentSlide(4)"></span>
-</div>
-      <!-- side-nav -->
-    <div class="sidenav">
-     <span onclick="closeNav()"class="close_sidenav-btn">&#10006</span>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Clients</a>-
-      <a href="#">Contact</a>
-    </div>
+  <div class="dot-bar" style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+  
   </div>
    
     <Script src="/assets/js/HowToDo.js"></Script>
