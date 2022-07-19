@@ -160,12 +160,16 @@ span.psw {
 
 .slide-modal {
   display: block;
+  margin: 50px auto 0;
 }
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
   position: relative;
-  margin:  30px auto;
+  margin:   auto;
+}
+.dot-bar {
+  margin-top: -20px;
 }
 
 /* Hide the images by default */
