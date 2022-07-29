@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HowToDo</title>
+    <link rel="stylesheet" href="/assets/css/HowToDo.css">
+</head>
+<body>
+   <div class="main-container">
+    <header>
+    <div class="navbar">
+      <span class="open-nav-btn">&#9776</span>
+      <div class="search-box">
+      <input type="text" name="search" class="search" placeholder="&#x26B2  Search..." >
+    </div>
+      <div class="navlist">
+          <a href="#homepage">Trang Chủ</a>
+          <a href="#products">products</a>
+          <a href="#">abc</a>
+          <a href="#">abc</a>
+          <a href="#footer">footer</a>
+      </div>
+      
+      <button class="login-btn" type="button">login</button>
+    </div>
+  </header>
+  <section>
+    <div class="login-modal login-animate">
+      <span class="close-login-btn" title="Close Modal">&times;</span>
+      <form class="modal-content " action="/action_page.php">
+        <div class="logo-container">
+          <img src="/assets/images/amit-logo.jpg" alt="logo" class="login-logo">
+        </div>
+          <h1 class="login-title">
+            Chào mừng bạn đăng nhập vào Abc
+          </h1>
+        <div class="container">
+          <label for="uname">Username</label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+
+          <label for="password">Password</label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+
+        <div>
+          <button type="button" class="cancel-btn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+  </section>
+  <section id="homepage">
+    <div class="homepage-container">
+      <!-- em chọn đại 1img làm background ^^! -->
+      <img src="/assets/images/homepagebackground.jpg" alt="background logo" class="homepage-img">
+    </div>
+  </section>
+  <section id="products">
+    <div class="products-section">
+      <H2 class="products-title">Product</H2>
+      <div class="products-contents">
+      <div class="products-items">
+        <img src="/assets/images/amit-logo.jpg" alt="products">
+        <span>Product 1</span>
+        <div class="products-items-hover hover-animate">
+          <img src="/assets/images/amit-logo.jpg" alt="products">
+          <span>Product 1</span>
+          <span>products details</span>
+          <span>products details</span>
+          <span class="hover">Click for more</span>
+          <div class="products-modal">
+            <span class="close-products-modal">&#10006</span>
+            <div class="products-modal-content">
+              <div class="img-box">
+                <img src="/assets/images/amit-logo.jpg" alt="product">
+              </div>
+              <p>products details</p>
+              <p>products details</p>
+              <p>products details</p>
+              <p>products details</p>
+              <p>products details</p>
+            </div>
+          </div>
+        </div>
+      </div>             
+      </div>
+    </div>
+  </div>
+  </section>
+  <footer id="footer">
+    <div class="form-container">
+      <div class="step-row">
+        <div id="progress"></div>
+        <div class="step-col">step1</div> 
+        <div class="step-col">step2</div> 
+        <div class="step-col">step3</div> 
+      
+      </div>
+      <form action="" id="form-step1" class="multi-step-form">
+        <h3>form1</h3>
+        <input type="text" placeholder="email"/>
+        <input type="password" placeholder="password"/>
+        <input type="text" placeholder="name"/>
+        <div class="button-block">
+          <button type="button" id="next">Next</button>
+        </div>
+      </form>
+      <form action="" id="form-step2" class="multi-step-form position">
+        <h3>form2</h3>
+        <input type="text" placeholder="email"/>
+        <input type="password" placeholder="password"/>
+        <input type="text" placeholder="name"/>
+        <div class="button-block">
+          <button type="button" id="back">Back</button>
+          <button type="button" id="next1">Next</button>
+        </div>
+      </form>
+      <form action="" id="form-step3" class="multi-step-form position">
+        <h3>form3</h3>
+        <input type="text" placeholder="email"/>
+        <input type="password" placeholder="password"/>
+        <input type="text" placeholder="name"/>
+        <div class="button-block">
+          <button type="button" id="back1">back</button>
+          <button type="submit" id="submit">submit</button>
+        </div>
+      </form>
+      
+    </div>
+  </footer>
+  <script src="/assets/js/homepage.js"></script>
+</body>
+</html>
