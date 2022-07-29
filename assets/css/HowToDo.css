@@ -3,320 +3,369 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: rgb(0, 15, 15);
+  font-family:sans-serif;
 }
-form {
-  border: 3px solid #f1f1f1;
-}
-
-/* Full-width inputs */
-input[type=text], input[type=password] {
+.navbar {
+  z-index: 1;
   width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
-
-/* Set a style for all buttons */
-button {
-  background-color: #04AA6D;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-}
-.login-btn {
-  display: block;
-  color: #000;
-  margin-right: 20px;
-  background-color: #919191;
-  height: 50px;
-  padding: 0;
-  width: 80px;
-  font-weight: bold;
-}
-
-/* Add a hover effect for buttons */
-button:hover {
-  transition: 0.5s;
-  opacity: 0.5;
-}
-
-/* Extra style for the cancel button (red) */
-.cancelbtn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: #f44336;
-}
-
-/* Center the avatar image inside this container */
-.imgcontainer {
-  text-align: center;
-  margin: 24px 0 12px 0;
-}
-
-/* Avatar image */
-img.avatar {
-  width: 40%;
-  border-radius: 50%;
-}
-
-/* Add padding to containers */
-.container {
-  padding: 16px;
-}
-
-/* The "Forgot password" text */
-span.psw {
-  float: right;
-  padding-top: 16px;
-}
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-  span.psw {
-    display: block;
-    float: none;
-  }
-  .cancelbtn {
-    width: 100%;
-  }
-}
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; 
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  padding-top: 60px;
-}
-
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 5px auto; /* 15% from the top and centered */
-  border: 1px solid #888;
-  width: 30%; /* Could be more or less, depending on screen size */
-}
-
-
-/* The Close Button */
-.close {
-  /* Position it in the top right corner outside of the modal */
-  position: absolute;
-  right: 0;
-  top: 0;
-  margin-right: 20px;
-  color: #000;
-  font-size: 40px;
-  font-weight: bold;
-  display: flex;
-  height: 50px;
-  width: 80px;
-  background-color: #04AA6D;
-  justify-content: center;
-}
-.close:hover,
-.close:focus {
-  transition: 0.5s;
-  color: red;
-  background-color: #fff;
-  cursor: pointer;
-}
-
-/* Add Zoom Animation */
-.animate {
-  -webkit-animation: animatezoom 0.6s;
-  animation: animatezoom 0.4s
-}
-
-@-webkit-keyframes animatezoom {
-  from {-webkit-transform: scale(0)}
-  to {-webkit-transform: scale(1)}
-}
-
-@keyframes animatezoom {
-  from {transform: scale(0)}
-  to {transform: scale(1)}
-}
-.icon-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  top: 0px;
-  width: 100%;
-  height: 50px;
   position: fixed;
-  background-color: #717171;
-  transition: 0.25s;
-}
-
-.slide-modal {
-  display: block;
-  margin: 50px auto 0;
-}
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin:   auto;
-}
-.dot-bar {
-  margin-top: -20px;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1s;
-}
-
-@keyframes fade {
-  from {opacity: 0.5}
-  to {opacity: 1}
-}
-/* The side navigation menu */
-.sidenav {
-  height: 100%; 
-  width: 0; 
-  position: fixed; 
-  z-index: 1; 
-  top: 0; 
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden; 
-  padding-top: 60px; 
-  transition: 0.5s; 
-}
-
-/* The navigation menu links */
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  text-align: center;
-  transition: 0.3s;
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-  color: #bd7a7a;
-  background-color: #FFF;
-}
-
-/* Position and style the close button (top right corner) */
-.sidenav .close_sidenav-btn {
-  color: #818181;
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 0 20px ;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-.main-container {
-  transition:  .5s;
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: 0.5s;
   overflow: hidden;
 }
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-.open-sidenav-btn {
-  display: inline-block;
+.navbar > .login-btn {
   cursor: pointer;
-  margin-left: 20px;
-  position: relative;
-  width: 50px;
-  padding:0 10px;
+  display: block;
   height: 50px;
-  font-size: 32px;
+  width: 100px;
+  border: none;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0);
+  text-transform: capitalize;
+  color: #ccc;
+}
+.navbar > .login-btn:hover {
+  transition: 0.5s;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 2px;
+  
+}
+.navlist {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.navlist > a {
+  color: #ccc;
+  text-align: center;
+  display: block;
+  line-height: 50px;
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: capitalize;
   border-radius: 2px;
 }
-.open-sidenav-btn:hover, .close_sidenav-btn:hover {
-  transition: 0.5s;
-  cursor: pointer;
-  background-color: #fff;
+.navlist > a:hover {
+  transition: 0.25s;
+  color: #fff;
 }
+.open-nav-btn {
+  display: none;
+}
+.close-login-btn {
+  position: absolute;
+  top: 50px;
+  right: 25%;
+  line-height: 30px;
+  width: 30px;
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  font-size: 28px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.close-login-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: 0.5s;
+}
+.login-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4); 
+  padding-top: 50px;
+}
+.modal-content {
+  border: 3px solid #f1f1f1;
+  width: 50%;
+  margin: auto;
+  background-color: #f1f1f1;
+  padding: 16px;
+}
+.logo-container {
+  text-align: center;
+  margin: 24px 0 30px 0;
+}
+.login-logo {
+  width: 10%;
+  margin: 0 auto;
+}
+.login-title {
+  font-size: 20px;
+  width:100%;
+  text-align: center;
+}
+.modal-content > .container {
+  margin-top: 30px;
+}
+.modal-content > div > input {
+  width: 100%;
+  padding: 5px;
+  border: none;
+}
+button {
+  height: 24px;
+  width: 100%;
+  border: none;
+  background-color:rgb(18, 18, 145) ;
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.6;
+  transition: 0.25s;
+}
+.cancel-btn {
+  background-color: rgb(253, 50, 50);
+}
+.show-loginform {
+  display: block;
+}
+.login-animate {
+  -webkit-animation:animatezoom 0.25s;
+  animation:animatezoom 0.25s;
+  -moz-animation:animatezoom 0.25s ;
+}
+@keyframes animatezoom {
+  from {transform: scale(0);}
+  to {transform: scale(1);}
+}
+@-webkit-keyframes animatezoom {
+  from {transform: scale(0);}
+  to {transform: scale(1);}
+}
+@-moz-keyframes animatezoom {
+  from {transform: scale(0);}
+  to {transform: scale(1);}
+}
+.homepage-container {
+  height: 100vh;
+  width: 100%;
+  background-color: #ccc;
+}
+.homepage-img {
+  width: 100%;
+  height: 100vh;
+}
+.products-section {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(36, 46, 65, 0.753);
+}
+.products-section > h2 {
+  font-size: 28px;
+  width: 100%;
+  text-align: center;
+  padding-top: 30px;
+}
+.products-contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 10vh 10vw;
+}
+.products-items-hover {
+  position:absolute;
+  top: -50px;
+  left: -50px;
+  width: 225px;
+  height: 225px;
+  display: none;
+  transition: 0.5;
+  box-shadow: 5px 5px 5px 5px rgba(0, 15, 15, 0.2);
+}
+.products-items-hover > span {
+  width: 225px;
+  text-align: center;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.products-modal {
+  display: none;
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.5s ease-out;
+}
+.products-modal-content {
+  overflow: hidden;
+  border: 1px solid #f1f1f1;
+  width: 80vw;
+  height: 80vh;
+  margin: 5rem auto;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+.close-products-modal {
+  top: 10vh;
+  right: 10vw;
+  position: absolute;
+  font-size: 35px;
+}
+.close-products-modal:hover {
+  transition: 0.25s;
+  opacity: 0.5;
+  color: red;
+}
+
+.products-modal-content >p {
+  width: 100%;
+  margin-bottom: 10px;
+  
+}
+.img-box {
+  margin-bottom: 20px;
+}
+
+.products-items {
+  position: relative;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  cursor: pointer;
+}
+.products-items > img {
+  height: 150px;
+  width: 150px;
+}
+.products-items > span {
+  transition: 0.25s;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.hover-animate {
+  -webkit-animation:animatehover 0.2s;
+  animation:animatehover 0.2s;
+  -moz-animation:animatehover 0.2s ;
+}
+@keyframes animatehover {
+  from {transform: scale(0);}
+  to {transform: scale(1.0);}
+}
+@-webkit-keyframes animatehover {
+  from {transform: scale(0);}
+  to {transform: scale(1.0);}
+}
+@-moz-keyframes animatehover {
+  from {transform: scale(0);}
+  to {transform: scale(1.0);}
+}
+.search {
+  background-color: #ccc;
+  width: 80px;
+  border: none;
+  border-radius: 2px;
+  height: 30px;
+  padding: 8px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+.search:focus {
+  width: 100%;
+}
+.search-box {
+  margin-left: -5%;
+  width: 10%;
+}
+/* multi step form */
+#footer {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(90deg, rgba(31,32,78,0.7) 0%, rgba(15,6,11,0.7) 15%, rgba(37,69,93,0.7) 70%, rgba(83,61,30,0.7) 100%);
+}
+.form-container {
+  margin: 0 auto;
+  height: 400px;
+  top: 10%;
+  position: relative;
+  width:360px ;
+  border: 1px solid red;
+  background-color: #fff;
+  overflow: hidden;
+}
+.multi-step-form {
+  left: 0px;
+  height: 400px;
+  background: transparent;
+  position: absolute;
+  transition: 0.5s ease
+}
+.multi-step-form >h3 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.multi-step-form > input {
+  border: none;
+  margin: 10px 10%;
+  width: 80%;
+  border-bottom: 1px solid #ccc;
+  padding: 5px 10px;
+  text-transform: capitalize;
+}
+.button-block {
+  margin-top: 20px;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+}
+.button-block  > button {
+  text-transform: capitalize;
+  width: 120px;
+  height: 40px;
+  border-radius:32px;
+  background: linear-gradient(to right, #ff105f, #ffad06)
+}
+#form-step2 {
+  left: 450px;
+}
+#form-step3 {
+  left: 450px;
+}
+.step-row {
+  width: 100%;
+  height: 40px;
+  margin: 0 auto 5px auto;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 -1px 5px -1px #000;
+  position: relative;
+}
+.step-col {
+  width: 120px;
+  position: relative;
+  padding: 0px 20px;
+}
+#progress {
+  height: 100%;
+  width: 120px;
+  background: linear-gradient(to right, #ff105f, #ffad06);
+  position: absolute;
+  transition: 0.75s;
+}
+#progress::after {
+  content: '';
+  height: 0;
+  width: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  position: absolute;
+  right: -20px;
+  top: 0;
+  border-left: 20px solid #ffad06;
+}
+
