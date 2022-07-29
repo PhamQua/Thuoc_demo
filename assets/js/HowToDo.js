@@ -31,7 +31,17 @@ var sideNav = document.querySelector('.sidenav')
 var main = document.querySelector('.main-container')
 var slideModal = document.querySelector('.slide-modal')
 var iconBar = document.querySelector('.icon-bar')
+var loginBtn = document.querySelector('.login-btn')
+var setTimeout
+// loginBtn.addEventListener('mouseover', (event) => {
+//     setTimeout(function () {
+//         modal.style.display = 'block'
+//     },2000)
+// });
 
+function openLogin() {
+    modal.style.display = 'block'
+}
 
 window.onclick = function(event) {
 if (event.target == modal) {
@@ -50,8 +60,13 @@ function openNav() {
   }
 //   vì khi popup sidebar ra thì slide img hiện đè lên sidebar, nếu chỉnh Z-index thì bị
 // che mất nút pre, next nên e để tạm animate như này, để em chỉnh lại sau
+function hover() {
+    
+}
+console.log(hover)
+
 function closeNav() {
-    sideNav.style.width = "0";
+    // sideNav.style.width = "0";
     slideModal.style.display = "block"
     }
     var lastScrollTop = 0
