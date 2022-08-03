@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/portfolio.css">
+</head>
+<body>
+    <div class="navbar">
+        <button type="button" class="navbar-toggle"> &#9776</button>
+        <ul class="navlist">
+            <span id="close-navbar">&#10006</span>
+            <a href="#home">Home</a>
+            <a href="#services">services</a>
+            <a href="#portfolio">portfolio</a>
+            <a href="#about">about</a>
+            <a href="#contact">contact</a>
+        </ul>
+        <ul class="navbtn-container">
+            <button type="button" class="login-btn">Login</button>
+            <span>|</span>
+            <button type="button" class="Signup-btn">sign up</button>
+        </ul>
+    </div>
+    <div class="login-container">
+        <div class="login-modal">
+            <form action="action_page.php" method="post" class="login-form">
+                <H3 class="login-title">Login</H3>
+                <label for="name">User Name :</label>
+                <input type="text" name="name" placeholder="User name" required  />
+                <label for="password">Password :</label>
+                <input type="password" name="password" placeholder="Password" required />
+                <a href="#">Forgot your Password?</a>
+                <div class="form-group">
+                    <input type="checkbox" name="remember"/><label for="remember">Remember</label>
+                    <button type="button" class="cancel-btn">cancel</button>
+                    <button type="submit">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="signup-container open-animate">
+        <div class="signup-modal">
+            <div class="progress" id="progress"></div>
+            <button type="button" class="close-signin-btn">&#10006</button>
+            <form id="signup-form1" action="action_page.php" method="post" class="signup-form">
+                <h3>infomation</h3>
+                <input type="text" placeholder="First Name *">
+                <input type="text" placeholder="Last Name *">
+                <input type="text" placeholder="Address *">
+                <div class="btn-block">
+                    <button type="button" id="next" class="signup-btn">Next</button>
+                </div>
+            </form>
+            <form id="signup-form2" action="action_page.php" method="post" class="signup-form">
+                <h3>account</h3>
+                <input type="text" placeholder="User Name *">
+                <input type="password" placeholder="Password *">
+                <input type="password" placeholder="Confirm Password *">
+                <div class="btn-block">
+                    <button type="button" id="back" class="signup-btn">Back</button>
+                    <button type="button" id="next1" class="signup-btn">Next</button>
+                </div>
+            </form>
+            <form id="signup-form3" action="action_page.php" method="post" class="signup-form">
+                <h3>social</h3>
+                <input type="text" placeholder="linkedin *">
+                <input type="text" placeholder="Github *">
+                <input type="text" placeholder="instagram *">
+                <div class="btn-block">
+                    <button type="button" id="back1" class="signup-btn">Back</button>
+                    <button type="submit" id="submit" class="signup-btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <section id="home">
+        <div class="home-container">
+            <img src="/assets/images/forrest-cavale-jwIk4Z3Msi4-unsplash.jpg"/>
+            <H2>Welcome!</H2>
+        </div>
+    </section>
+    <section id="services">
+        <div class="service-container">
+            <div>
+                <h3>services</h3>
+                <p>Lorem ipsum dolor sit amet consectetur</p>
+            </div>
+            <div class="row">
+                <div class="service-items">
+                    <h4>Here is a pokok</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+                <div class="service-items">
+                    <h4>Here's a heart</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+                <div class="service-items">
+                    <h4>Waterfall maybe?</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio">
+        <div class="portfolio-container">
+            <h3>PORTFOLIO</h3>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <div class="portfolio-row">
+            <div class="col">
+                <div class="portfolio-hover">
+                    <img src="/assets/images/uploads_1411419068566071cef10_7562527b.avif" alt="">
+                </div>
+                <div class="portfolio-caption">
+                    <h4>Startup Framework</h4>
+                    <p>Website Design</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="portfolio-hover">
+                    <img src="/assets/images/portfolio2.avif" alt="">
+                </div>
+                <div class="portfolio-caption">
+                    <h4>Round Icons</h4>
+                    <p>Graphic Design</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="portfolio-hover">
+                    <img src="/assets/images/portfolio3.avif" alt="">
+                </div>
+                <div class="portfolio-caption">
+                    <h4>Treehouse</h4>
+                    <p>Website Design</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="portfolio-hover">
+                    <img src="/assets/images/portfolio2.avif" alt="">
+                </div>
+                <div class="portfolio-caption">
+                    <h4>Golden</h4>
+                    <p>Website Design</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="portfolio-hover">
+                    <img src="/assets/images/portfolio3.avif" alt="">
+                </div>
+                <div class="portfolio-caption">
+                    <h4>Escape</h4>
+                    <p>Website Design</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="portfolio-hover">
+                    <img src="/assets/images/uploads_1411419068566071cef10_7562527b.avif" alt="">
+                </div>
+                <div class="portfolio-caption">
+                    <h4>Dreams</h4>
+                    <p>Website Design</p>
+                </div>
+            </div>
+            
+           
+        </div>
+    </section>
+    <section id="about">
+        <div class="about-container">
+            <h3>ABOUT</h3>
+            <p>Ajmal, I need help to learn how to tweak this part. I don't want this timeline crap. Haha.</p>
+        </div>
+        <div class="about-content">
+        <div class="about-col1">
+            <div class="circle"></div>
+            <div class="circle position1"></div>
+            <div class="circle position2"></div>
+            <div class="circle position3"></div>
+            <div class="circle position4">
+                <h4>BE PART OF OUR STORY!</h4>
+            </div>
+            <div class="timeline-panel">
+                <h4>2009-2011</h4>
+                <h4>Our Humble Beginnings</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+            </div>
+            <div class="timeline-panel position2">
+                <h4>DECEMBER 2012</h4>
+                <h4>Transition to Full Service</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+            </div>           
+        </div>
+        <div class="about-col2">
+            <div class="timeline-panel top-25">
+                <h4>MARCH 2011</h4>
+                <h4>An Agency is Born</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+            </div>
+            <div class="timeline-panel top-75">
+                <h4>JULY 2014</h4>
+                <h4>Phase Two Expansion</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section id="contact">
+        <img src="/assets/images/forrest-cavale-jwIk4Z3Msi4-unsplash.jpg" alt="">
+        <div class="contact-title">
+            <h2>CONTACT US</h2>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <div class="contact-form">
+            <div class="contact-row">
+                <div class="contact-col1">
+                    <input type="text" placeholder="Your Email*">
+                    <input type="text" placeholder="Your Name*">
+                    <input type="text" placeholder="Your Phone Number*">
+                </div>
+                <div class="contact-col2">
+                    <input type="text" placeholder="Your Message*">
+                </div>
+            </div>
+        </div>
+        <div class="contact-btn">
+            <button type="button" >Send Message</button>
+        </div>
+    </section>
+    <footer>
+        <span>Copyright © Your Website 2014</span>
+        <div>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+        </div>
+    </footer>
+    
+    
+<script src="/assets/js/portfolio.js"></script>
+</body>
+</html>
